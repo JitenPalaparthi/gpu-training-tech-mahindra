@@ -72,6 +72,12 @@ nvidia-smi -pm 0
 
 ---
 
+## All queries 
+
+```bash
+nvidia-smi --help-query-gpu
+```
+
 ## 🧪 ECC and Error Reporting
 
 ```bash
