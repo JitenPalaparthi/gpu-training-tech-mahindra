@@ -81,7 +81,7 @@ nvidia-smi --help-query-gpu
 ## 🧪 ECC and Error Reporting
 
 ```bash
-nvidia-smi --query-gpu=ecc.errors.uncorrected.total,ecc.mode.current --format=csv
+nvidia-smi --query-gpu=ecc.errors.uncorrected.aggregate.total,ecc.mode.current --format=csv
 ```
 - Display ECC error counts and mode.
 
