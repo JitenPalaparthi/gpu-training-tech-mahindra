@@ -8,3 +8,11 @@ apt update && \
     && apt clean \
     && rm -rf /var/lib/apt/lists/*
 
+apt update -y
+
+apt install openssh-client -y
+
+
+
+
+
