@@ -1,5 +1,4 @@
 docker network create demo-network
-
 docker run -d \
   --gpus all \
   --rm \
