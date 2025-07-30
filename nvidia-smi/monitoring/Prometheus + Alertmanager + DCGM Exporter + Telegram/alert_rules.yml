@@ -1,0 +1,11 @@
+groups:
+  - name: gpu.rules
+    rules:
+      - alert: GPUTemperatureHigh
+        expr: DCGM_FI_DEV_GPU_TEMP > 30
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "GPU temperature high on {{ $labels.instance }}"
+          description: "GPU {{ $labels.gpu }} temperature is {{ $value }}°C (> 30°C)"
