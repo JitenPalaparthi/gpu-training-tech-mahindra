@@ -16,7 +16,8 @@ B = tf.random.normal([matrix_size, matrix_size])
 print("Starting matrix multiplication workload...")
 start = time.time()
 C = tf.matmul(A, B)
-tf.experimental.numpy.linalg.norm(C)  # Some operation to use the result
+#tf.experimental.numpy.linalg.norm(C)  # Some operation to use the result
+print(C)
 end = time.time()
 
 print(f"Completed in {end - start:.2f} seconds.")
